@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>이벤트</title>
+	<script>
+		var a;
+		function f1(colorName){
+			a = document.getElementById("bodyId");
+			a.style.backgroundColor = colorName;
+		}
+	</script>
+</head>
+<body id = "bodyId">
+	<form name ="myform">
+		<select onchange="f1(options.value)">
+			<option value="red" > Red </option>
+			<option value="blue" > Blue </option>
+			<option value="yellow" > Yellow </option>
+			<option value="hotpink" > Hotpink </option>
+			<option value="green" > Green </option>
+			<option value="skyblue" > Skyblue </option>
+			<option value="gold" > Gold </option>
+			<option value="lime" > Lime </option>
+			<option value="brown" > Brown </option>
+			<option selected value="white" > White </option>
+		</select>
+	</form>
+</body>
+</html>
